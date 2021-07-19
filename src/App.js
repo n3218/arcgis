@@ -3,6 +3,9 @@ import DisplayMapYT from "./pages/DisplayMapYT.js"
 import DisplayMap from "./pages/DisplayMap.js"
 import DisplayYourLocation from "./pages/DisplayYourLocation.js"
 import AddToMap from "./pages/AddToMap.js"
+import AddFeature from "./pages/AddFeature.js"
+import FindPlaces from "./pages/FindPlaces.js"
+import DisplayWebMap from "./pages/DisplayWebMap.js"
 
 const App = () => {
   return (
@@ -22,6 +25,15 @@ const App = () => {
             <li>
               <Link to="/add-to-map">Add To Map</Link>
             </li>
+            <li>
+              <Link to="/add-feature">Add a Feature</Link>
+            </li>
+            <li>
+              <Link to="/find-places">Find places</Link>
+            </li>
+            <li>
+              <Link to="/display-web-map">Display Web Map</Link>
+            </li>
           </ul>
         </nav>
 
@@ -35,6 +47,15 @@ const App = () => {
             </Route>
             <Route path="/add-to-map">
               <AddToMap />
+            </Route>
+            <Route path="/add-feature">
+              <AddFeature />
+            </Route>
+            <Route path="/find-places">
+              <FindPlaces />
+            </Route>
+            <Route path="/display-web-map">
+              <DisplayWebMap />
             </Route>
             <Route path="/">
               <DisplayMapYT />
