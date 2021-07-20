@@ -2,7 +2,7 @@
   "name": "first-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://n3218.github.io/arcgis",
+  "homepage": "https://n3218.github.io/arcgis",
   "dependencies": {
     "@arcgis/core": "^4.20.2",
     "@testing-library/jest-dom": "^5.11.4",

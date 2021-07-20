@@ -11,6 +11,7 @@ import SfiSketchPolygon from "./pages/SfiSketchPolygon.js"
 import ExploringSketch from "./pages/ExploringSketch.js"
 import StyleFeatureLayer from "./pages/StyleFeatureLayer.js"
 import DisplayPopUp from "./pages/DisplayPopUp.js"
+import ImportData from "./pages/ImportData.js"
 
 const App = () => {
   return (
@@ -54,6 +55,9 @@ const App = () => {
             <li>
               <Link to="/display-popup">Display a pop-up</Link>
             </li>
+            <li>
+              <Link to="/import-data">Import data as a feature layer</Link>
+            </li>
           </ul>
         </nav>
 
@@ -91,6 +95,9 @@ const App = () => {
             </Route>
             <Route path="/display-popup">
               <DisplayPopUp />
+            </Route>
+            <Route path="/import-data">
+              <ImportData />
             </Route>
             <Route path="/">
               <DisplayMapYT />
