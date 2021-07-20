@@ -10,6 +10,7 @@ import SfiEmbeddedWidgets from "./pages/SfiEmbeddedWidgets.js"
 import SfiSketchPolygon from "./pages/SfiSketchPolygon.js"
 import ExploringSketch from "./pages/ExploringSketch.js"
 import StyleFeatureLayer from "./pages/StyleFeatureLayer.js"
+import DisplayPopUp from "./pages/DisplayPopUp.js"
 
 const App = () => {
   return (
@@ -50,6 +51,9 @@ const App = () => {
             <li>
               <Link to="/exploring-sketch">Exploring Sketch</Link>
             </li>
+            <li>
+              <Link to="/display-popup">Display a pop-up</Link>
+            </li>
           </ul>
         </nav>
 
@@ -84,6 +88,9 @@ const App = () => {
             </Route>
             <Route path="/style-feature-layer">
               <StyleFeatureLayer />
+            </Route>
+            <Route path="/display-popup">
+              <DisplayPopUp />
             </Route>
             <Route path="/">
               <DisplayMapYT />

@@ -6,7 +6,6 @@ import GraphicsLayer from "@arcgis/core/layers/GraphicsLayer"
 import Sketch from "@arcgis/core/widgets/Sketch"
 import BasemapToggle from "@arcgis/core/widgets/BasemapToggle"
 import BasemapGallery from "@arcgis/core/widgets/BasemapGallery"
-
 import { ARCGIS_API_KEY } from "../globalVariables"
 
 const ExploringSketch = () => {
