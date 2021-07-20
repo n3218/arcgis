@@ -6,6 +6,10 @@ import AddToMap from "./pages/AddToMap.js"
 import AddFeature from "./pages/AddFeature.js"
 import FindPlaces from "./pages/FindPlaces.js"
 import DisplayWebMap from "./pages/DisplayWebMap.js"
+import SfiEmbeddedWidgets from "./pages/SfiEmbeddedWidgets.js"
+import SfiSketchPolygon from "./pages/SfiSketchPolygon.js"
+import ExploringSketch from "./pages/ExploringSketch.js"
+import StyleFeatureLayer from "./pages/StyleFeatureLayer.js"
 
 const App = () => {
   return (
@@ -14,7 +18,7 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Display Map YT</Link>
+              <Link to="/">Display Map with loadModules</Link>
             </li>
             <li>
               <Link to="/display-map">Display Map</Link>
@@ -26,13 +30,25 @@ const App = () => {
               <Link to="/add-to-map">Add To Map</Link>
             </li>
             <li>
-              <Link to="/add-feature">Add a Feature</Link>
+              <Link to="/add-feature">Add a Feature Layer</Link>
+            </li>
+            <li>
+              <Link to="/style-feature-layer">Style a Feature Layer</Link>
             </li>
             <li>
               <Link to="/find-places">Find places</Link>
             </li>
             <li>
               <Link to="/display-web-map">Display Web Map</Link>
+            </li>
+            <li>
+              <Link to="/sfi-embedded-widgets">SFI Embedded Widgets Sample</Link>
+            </li>
+            <li>
+              <Link to="/sfi-sketch-polygon">SFI Sketch Polygon Sample</Link>
+            </li>
+            <li>
+              <Link to="/exploring-sketch">Exploring Sketch</Link>
             </li>
           </ul>
         </nav>
@@ -56,6 +72,18 @@ const App = () => {
             </Route>
             <Route path="/display-web-map">
               <DisplayWebMap />
+            </Route>
+            <Route path="/sfi-embedded-widgets">
+              <SfiEmbeddedWidgets />
+            </Route>
+            <Route path="/sfi-sketch-polygon">
+              <SfiSketchPolygon />
+            </Route>
+            <Route path="/exploring-sketch">
+              <ExploringSketch />
+            </Route>
+            <Route path="/style-feature-layer">
+              <StyleFeatureLayer />
             </Route>
             <Route path="/">
               <DisplayMapYT />

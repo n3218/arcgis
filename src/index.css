@@ -21,6 +21,8 @@ nav ul {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-inline-start: 0px;
+  margin: 0 20px;
 }
 
 ul {
@@ -28,8 +30,11 @@ ul {
 }
 
 ul li {
-  padding: 10px;
+  flex: 1 1 auto;
+  margin: 1px;
+  padding: 5px;
   border: 1px solid lightgray;
+  border-radius: 3px;
 }
 
 ul li a {

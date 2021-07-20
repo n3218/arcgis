@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react"
-import Map from "@arcgis/core/Map"
 import WebMap from "@arcgis/core/WebMap"
 import esriConfig from "@arcgis/core/config"
 import MapView from "@arcgis/core/views/MapView"

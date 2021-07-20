@@ -14,7 +14,7 @@ const DisplayYourLocation = () => {
       basemap: "arcgis-topographic" // Basemap layer service
     })
     let view = new MapView({
-      container: "viewDiv",
+      container: mapRef.current, // Div element
       map: map,
       center: [-40, 28],
       zoom: 2

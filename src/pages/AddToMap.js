@@ -4,7 +4,6 @@ import esriConfig from "@arcgis/core/config"
 import MapView from "@arcgis/core/views/MapView"
 import Graphic from "@arcgis/core/Graphic"
 import GraphicsLayer from "@arcgis/core/layers/GraphicsLayer"
-
 import { ARCGIS_API_KEY } from "../globalVariables"
 
 const AddToMap = () => {
@@ -83,9 +82,19 @@ const AddToMap = () => {
         width: 1
       }
     }
+    const popupTemplate = {
+      title: "{Name}",
+      content: "{Description}"
+    }
+    const attributes = {
+      Name: "Graphic",
+      Description: "I am a polygon"
+    }
     const polygonGraphic = new Graphic({
       geometry: polygon,
-      symbol: simpleFillSymbol
+      symbol: simpleFillSymbol,
+      attributes: attributes,
+      popupTemplate: popupTemplate
     })
     graphicsLayer.add(polygonGraphic)
 
